@@ -7,7 +7,11 @@ import axios from 'axios';
 
 axios.interceptors.request.use(request => {
     console.log(request);
+    // Edit request config
     return request;
+},error => {
+    console.log(error);
+    return Promise.reject(error)
 })
 
 ReactDOM.render( <App />, document.getElementById( 'root' ) );
