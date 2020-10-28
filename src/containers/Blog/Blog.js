@@ -62,12 +62,10 @@ class Blog extends Component {
                         <li><a href="/new-post">New Post</a></li>
                     </ul></nav>
                 </header>
-                <section className="Posts">
-                    {posts}
-                </section>
 
 
-             {/*   <section>
+
+{/*                <section>
                     <FullPost id={this.state.selectedPostId}/>
                 </section>
                 <section>
